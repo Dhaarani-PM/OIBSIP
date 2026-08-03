@@ -23,6 +23,18 @@ A desktop-based Body Mass Index (BMI) calculator built with Python and Tkinter. 
 - Scrollable Analytics and About BMI tabs
 - Detailed About BMI page with formula, categories, health tips, and disclaimer
 
+## Input Limits
+
+For valid BMI calculations, the application accepts:
+
+| Input | Allowed Range |
+|---|---|
+| Age | 1 to 120 years |
+| Height | 50 to 300 cm |
+| Weight | 2 to 500 kg |
+
+If a value is outside these limits, the application displays a validation message instead of saving a BMI record.
+
 ## Technologies Used
 
 - Python
