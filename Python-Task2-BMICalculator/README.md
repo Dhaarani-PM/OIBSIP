@@ -1,86 +1,38 @@
 # Smart BMI Tracker
 
-A desktop-based Body Mass Index (BMI) calculator built with Python and Tkinter. The application lets users calculate BMI, save records, view history, export data, and explore analytics through charts.
+A professional desktop application for calculating and tracking Body Mass Index (BMI). Built with Python, Tkinter, SQLite, and Matplotlib.
 
 ## Features
 
 - Calculate BMI using height and weight
-- Supports age, name, and gender input
-- BMI category classification:
+- Accepts name, age, gender, height, and weight
+- Classifies BMI into:
   - Underweight
   - Normal Weight
   - Overweight
   - Obese
-- BMI gauge and personalised health tips
-- Save BMI records in an SQLite database
+- Animated BMI gauge
+- Personalised health advice based on BMI category
+- Save BMI records using SQLite
 - Search, refresh, and delete BMI history records
-- Export BMI history to a CSV file
+- Export BMI history to CSV
 - Analytics dashboard with:
   - Total records and average BMI
   - BMI category summary cards
   - BMI trend chart
   - BMI category distribution pie chart
-- Scrollable Analytics and About BMI tabs
-- Detailed About BMI page with formula, categories, health tips, and disclaimer
+- Scrollable Analytics dashboard
+- Detailed About BMI page with BMI formula, categories, healthy tips, and disclaimer
 
 ## Input Limits
 
-For valid BMI calculations, the application accepts:
+The application validates the following ranges before calculating and saving a BMI record:
 
 | Input | Allowed Range |
 |---|---|
 | Age | 1 to 120 years |
 | Height | 50 to 300 cm |
 | Weight | 2 to 500 kg |
-
-If a value is outside these limits, the application displays a validation message instead of saving a BMI record.
-
-## Technologies Used
-
-- Python
-- Tkinter
-- SQLite
-- Matplotlib
-
-## Project Structure
-
-```text
-Python-Task2-BMICalculator/
-├── main.py              # Main Tkinter application
-├── bmi.py               # BMI calculation and category logic
-├── charts.py            # Gauge and analytics chart logic
-├── database.py          # SQLite database operations
-├── export.py            # CSV export feature
-├── requirements.txt     # Project dependency
-├── .gitignore
-└── README.md
-```
-
-## Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/YOUR-USERNAME/OIBSIP.git
-```
-
-2. Move into the project folder:
-
-```bash
-cd OIBSIP/Python-Task2-BMICalculator
-```
-
-3. Install the required package:
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-## Run the Application
-
-```bash
-python main.py
-```
 
 ## BMI Formula
 
@@ -107,10 +59,85 @@ BMI = 20.76
 | Overweight | 25.0 – 29.9 |
 | Obese | 30 and above |
 
+## Technologies Used
+
+- Python
+- Tkinter
+- SQLite
+- Matplotlib
+
+## Project Structure
+
+```text
+Python-Task2-BMICalculator/
+├── Screenshots/
+│   ├── about.png
+│   ├── aboutpgdown.png
+│   ├── aboutpgmiddle.png
+│   ├── analytics.png
+│   ├── analyticspgdown.png
+│   ├── calculate.png
+│   └── history.png
+├── main.py
+├── bmi.py
+├── charts.py
+├── database.py
+├── export.py
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Dhaarani-PM/OIBSIP.git
+```
+
+2. Open the BMI project folder:
+
+```bash
+cd OIBSIP/Python-Task2-BMICalculator
+```
+
+3. Install the required dependency:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+## Run the Application
+
+```bash
+python main.py
+```
+
+## Screenshots
+
+### BMI Calculator
+
+![BMI Calculator](Screenshots/calculate.png)
+
+### BMI History
+
+![BMI History](Screenshots/history.png)
+
+### Analytics Dashboard
+
+![Analytics Dashboard](Screenshots/analytics.png)
+
+### About BMI
+
+![About BMI](Screenshots/about.png)
+
 ## Disclaimer
 
 This application is intended for educational purposes only. BMI is only a screening tool and should not replace professional medical advice.
 
 ## Author
 
-Dhaarani P M
+**Dhaarani P M**
+
+Developed as part of the OASIS Infobyte Python Programming Internship.
